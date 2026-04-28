@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AuraAI | Elite Autonomous Business Agent</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="obsidian-theme">
+      <div class="ambient-glow"></div>
+      <section id="hero" class="hero-v2">
+          <div class="hero-content">
+              <div class="badge animate-pulse">AURA-v2.0 ENTERPRISE</div>
+              <h1>Architect Your <span class="glow-text">Billion-Dollar</span> Empire</h1>
+            <p>The first autonomous AI Agent that validates, builds, and scales businesses at venture-capital standards.</p>
+              <div class="cta-group">
+                  <div class="hero-input-wrapper glass animate-fade-in">
+                      <input type="text" id="hero-user-input" placeholder="Enter your business idea here..." onkeypress="handleHeroKey(event)">
+                      <button class="primary-btn" onclick="launchAuraWithIdea()">Launch Analysis</button>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id="app" class="app-container" style="display: none;">
+          <nav class="top-nav">
+              <div class="logo-group">
+                  <div class="logo-box"></div>
+                  <span class="logo-text">AuraAI</span>
+              </div>
+              <div class="nav-metrics">
+                  <div class="metric">SYSTEM: <span class="text-primary">100% OPERATIONAL</span></div>
+                  <div class="metric">NEURAL LOAD: <span class="text-secondary">42%</span></div>
+              </div>
+          </nav>
+          <div class="main-layout">
+              <aside class="sidebar-v2 glass">
+                  <h3>Intelligence Nodes</h3>
+                  <div class="node-list">
+                      <div class="node active" onclick="switchNode('validation')">1. Idea Validation</div>
+                      <div class="node" onclick="switchNode('market')">2. Market Research</div>
+                      <div class="node" onclick="switchNode('revenue')">3. Revenue Systems</div>
+                      <div class="node" onclick="switchNode('web')">4. Web Strategy</div>
+                      <div class="node" onclick="switchNode('app')">5. App Strategy</div>
+                      <div class="node" onclick="switchNode('uiux')">6. UI/UX Designs</div>
+                      <div class="node" onclick="switchNode('tech')">7. Tech Architecture</div>
+                      <div class="node" onclick="switchNode('marketing')">10. Marketing Engine</div>
+                      <div class="node" onclick="switchNode('investor')">11. Investor Support</div>
+                      <div class="node" onclick="switchNode('automation')">12. Automation Flows</div>
+                      <div class="node" onclick="switchNode('scaling')">14. Strategic Roadmap</div>
+                  </div>
+              </aside>
+              <main class="command-center">
+                  <div class="interaction-zone glass" id="chat-window">
+                      <div class="ai-msg">
+                          <span class="label">AURA-CORE:</span>
+                          <p>I am initialized. Provide a business objective or idea to begin the multi-step billion-dollar analysis.</p>
+                      </div>
+                  </div>
+                  <div class="builder-preview" id="builder-area" style="display: none;">
+                      <div class="preview-header">
+                          <span>LIVE VENTURE SHOWCASE</span>
+                      </div>
+                      <div class="preview-body">
+                          <iframe id="preview-frame" class="glass"></iframe>
+                      </div>
+                  </div>
+                  <div class="input-container glass">
+                      <input type="text" id="user-input" placeholder="Explain your business vision..." onkeypress="handleKey(event)">
+                      <button class="execute-btn" onclick="executeIntelligence()">EXECUTE ANALYSIS</button>
+                  </div>
+              </main>
+              <aside class="metrics-panel">
+                  <div class="card glass">
+                      <h4>Venture Health</h4>
+                      <div class="health-meter"><div class="fill" style="width: 85%;"></div></div>
+                      <p class="score">85% Investor Ready</p>
+                  </div>
+              </aside>
+          </div>
+      </section>
+      <script src="script.js"></script>
+  </body>
+  </html>
+  
